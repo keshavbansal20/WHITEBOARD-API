@@ -19,7 +19,7 @@ io.on("connection" ,  function(socket){
 });
 
 app.get("/", function(req,res){
-    res.send("<h1>Welcome to home page !!! </h1>");
+    res.redirect("/index.html");
 })
 
 http.listen(3000, () =>{
